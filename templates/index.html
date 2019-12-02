@@ -1,0 +1,15 @@
+{% extends 'general.html' %}
+
+{% block body%}
+
+    <h4 style="margin-top: 30px;" > Ingresa un nombre de usuario </h4>
+    <form class="form-signin" action="{{ url_for('chatmain')}}" method="post">
+        <div class="form-group mt-3">
+            <label for="user_name" class="mb-1"> <b>Nombre:</b> </label>
+            <input type="text" id="user_name" class="form-control p-4" placeholder="Nombre de Usuario" required name="user_name">
+            <hr>
+            <button type="submit" class="mt-1 btn btn-primary"> Ingresar </button>
+        </div>
+    </form>
+
+{% endblock %}
